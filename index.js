@@ -1,5 +1,5 @@
-const express = require('express');
-const personaRoute = require('./src/persona');
+const express = require("express");
+const personaRoute = require("./src/persona");
 
 const app = express();
 const port = process.env.PORT || 5010;
@@ -8,10 +8,10 @@ const port = process.env.PORT || 5010;
 app.use(express.json());
 
 //Rutas
-app.use('/persona', personaRoute);
+app.use("/persona", personaRoute);
 
-app.get('/', (req, res) => {
-  res.send("hola mundos");
+app.get("/", (req, res) => {
+  res.send("hola mundo Rafael");
 });
 
 app.listen(port, () => {
